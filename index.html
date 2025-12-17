@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>teste3D</title>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      
+      <!-- Asset Management -->
+      <a-assets>
+        <a-asset-item id="sistema" src="obj/scene.gltf"></a-asset-item>
+      </a-assets>
+
+      <!-- Modelo -->
+      <a-entity 
+        gltf-model="#sistema"
+        position="0 1.6 -3"
+        scale="1 1 1">
+      </a-entity>
+
+      <!-- Câmera -->
+      <!-- <a-entity camera position="0 1.6 0"></a-entity>
+              0 1.6 -3       -->
+
+    </a-scene>
+  </body>
+</html>
