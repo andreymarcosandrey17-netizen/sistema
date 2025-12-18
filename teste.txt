@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Sistema Solar</title>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      
+      <!-- Asset Management -->
+      <a-assets>
+        <a-asset-item id="sistema" src="obj/scene.gltf"></a-asset-item>
+      </a-assets>
+
+      <!-- Modelo -->
+      <a-entity 
+        gltf-model="#sistema"
+        position="0 1 -3"
+        scale="1 1 1"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 60000; easing: linear">
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>
