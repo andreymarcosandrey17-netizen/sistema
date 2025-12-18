@@ -35,9 +35,30 @@
 
         <!-- Câmera -->
         <a-camera
-          position="0 1.6 0"
+          position="0 0 -3"
           look-controls>
         </a-camera>
+
+        <!-- RIG DE CÂMERA (MOVIMENTO VR) -->
+<a-entity id="rig" position="0 0 0">
+
+  <!-- Câmera VR -->
+  <a-camera look-controls></a-camera>
+
+  <!-- Controle esquerdo -->
+  <a-entity
+    laser-controls="hand: left"
+    raycaster="objects: .teleportable">
+  </a-entity>
+
+  <!-- Controle direito -->
+  <a-entity
+    laser-controls="hand: right"
+    raycaster="objects: .teleportable">
+  </a-entity>
+
+</a-entity>
+
 
         <!-- Controle esquerdo -->
         <a-entity
